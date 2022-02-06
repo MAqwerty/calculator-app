@@ -1,0 +1,56 @@
+
+/* ................THEME1.................. */
+
+body{
+    background-color: #3b4664;
+  }
+  
+  .display{
+    background-color: #181f32;
+    color: #ffffff;
+  }
+  
+  h2{
+  color: #ffffff;
+  }
+  
+  .textT{
+    color: #ffffff;
+  }
+  
+  .numT{
+    color: #ffffff;
+  }
+  
+  div.theme{
+    background-color: #252d44;
+  }
+  
+  div.numbers{
+    background-color: #252d44;
+  }
+  
+  .item{
+  background-color:#eae3db ;
+  color: #444b5b ;
+  box-shadow: #b5a49a 0px 5px;
+  }
+  
+  .item-eval{
+    background-color: #d13f30;
+    color: #f8ffff;
+    box-shadow: #96271c 0px 4px;
+  }
+  .item-reset{
+    background-color: #647299;
+    color: #f8ffff;
+    box-shadow: #424e76 0px 4px ;
+  }
+  
+  .itemDEL{
+    font-size: 25px;  
+    background-color: #647299;
+    color: #f8ffff;
+    box-shadow: #424e76 0px 4px;
+      }
+  

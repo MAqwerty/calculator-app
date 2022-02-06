@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="HEAD" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <link rel="stylesheet" href="themes/theme1.css">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator-app</title>
+</head>
+<body>
+    
+    <form class="calculator  " name="calculator" >
+
+        <header>
+                <pre class="numT"><label for="Rtheme1">1</label>   <label for="Rtheme2">2</label>   <label for="Rtheme3">3</label></pre>
+
+                <h2> calc </h2>
+
+                <div class="theme"> 
+                    <input checked type="radio"  name="theme" id="Rtheme1"  > 
+                    <input type="radio"  name="theme" id="Rtheme2"  > 
+                    <input type="radio" name="theme" id="Rtheme3" > 
+                    <div id="btnR" ></div>
+                </div>
+
+                <p class="textT" >THEME</p>
+        </header>
+
+        <input type="text" name="display" class="display" id="">
+
+        <div class="numbers grid-container">
+
+            <input type="button" class="item item7 active " value="7" onclick="calculator.display.value+='7'">
+            <input type="button" class="item item8 active " value="8" onclick="calculator.display.value+='8'">
+            <input type="button" class="item item9 active " value="9" onclick="calculator.display.value+='9'">
+            <input type="button" class="item itemDEL active " value="DEL" onclick="calculator.display.value = calculator.display.value.slice(0, -1)" >
+            
+            <input type="button" class="item item4 active " value="4" onclick="calculator.display.value+='4'" >
+            <input type="button" class="item item5 active " value="5" onclick="calculator.display.value+='5'">
+            <input type="button" class="item item6 active " value="6" onclick="calculator.display.value+='6'">
+            <input type="button" class="item itemPLUS active " value="+" onclick="calculator.display.value+='+'">
+
+            <input type="button" class="item item1 active " value="1" onclick="calculator.display.value+='1'">
+            <input type="button" class="item item2 active " value="2" onclick="calculator.display.value+='2'">
+            <input type="button" class="item item3 active " value="3" onclick="calculator.display.value+='3'">
+            <input type="button" class="item item- active " value="-" onclick="calculator.display.value+='-'">
+            
+            <input type="button" class="item itemDOT active " value="." onclick="calculator.display.value+='.'">
+            <input type="button" class="item item0 active " value="0" onclick="calculator.display.value+='0'">
+            <input type="button" class="item itemDivision active " value="/" onclick="calculator.display.value+='/'">
+            <input type="button" class="item itemMultiply active " value="*" onclick="calculator.display.value+='*'">
+
+            <input type="button" class="item-reset active " value="RESET" onclick="calculator.display.value = '' ">
+            <input type="button" class="item-eval active " value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+
+        </div>
+
+    </form>
+
+</body>
+</html>
