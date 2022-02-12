@@ -4,7 +4,7 @@ window.onload = function () {
     let Rtheme2 = document.getElementById('Rtheme2')
     let Rtheme3 = document.getElementById('Rtheme3')
     let btnR = document.getElementById('btnR')
-    let HEAD = document.getElementById('HEAD')
+    let theme = document.getElementById('theme')
 
     Rtheme1.addEventListener('input',theme1)
     Rtheme2.addEventListener('input',theme2)
@@ -12,15 +12,15 @@ window.onload = function () {
 
 
     Rtheme1.addEventListener('change',function(){
-        HEAD.innerHTML += '<link rel="stylesheet" type"text/css" href="themes/theme1.css">'; 
+        theme.href = "themes/theme1.css"
     })
 
     Rtheme2.addEventListener('change',function(){
-        HEAD.innerHTML += '<link rel="stylesheet" type"text/css" href="themes/theme2.css">'; 
+        theme.href = "themes/theme2.css"
     })
 
     Rtheme3.addEventListener('change',function(){
-        HEAD.innerHTML += '<link rel="stylesheet" type"text/css" href="themes/theme3.css">'; 
+        theme.href = "themes/theme3.css"
     })
 
 
